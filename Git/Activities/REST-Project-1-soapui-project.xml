@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="65637f4b-b032-4f9c-9461-a004c729dcb1" activeEnvironment="Default environment" name="REST Project 1" resourceRoot="" soapui-version="5.9.1" encryptionMode="Not encrypted" projectVersion="" updated="3.64.0 2025-12-11T09:36:10Z" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings/>
+  <con:interface xsi:type="con:RestService" id="557394a7-8245-4f2e-a1cc-a367c1630f04" wadlVersion="http://wadl.dev.java.net/2009/02" name="https://api.github.com" type="rest" lastUpdated="2026-02-08T20:09:28.628+05:30" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <con:settings/>
+    <con:definitionCache type="TEXT" rootPart=""/>
+    <con:endpoints>
+      <con:endpoint>https://api.github.com</con:endpoint>
+    </con:endpoints>
+    <con:resource name="Keys" path="/user/keys" id="a5af1415-95cc-47f6-b6bb-9b196317b5c2">
+      <con:settings/>
+      <con:parameters/>
+      <con:method name="Keys 1" id="8ac1f349-be46-4626-b13a-a7e174e4796c" method="POST">
+        <con:settings/>
+        <con:parameters/>
+        <con:request name="Request 1" id="85406201-213a-44a4-8329-ea8d780ad08e" mediaType="application/json" postQueryString="false">
+          <con:settings>
+            <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+          </con:settings>
+          <con:endpoint>https://api.github.com</con:endpoint>
+          <con:request>{ 
+    "title": "TestKey",
+    "key": "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAICjA8SEK+AjIiTR+jzLI1uJfWtq6Oty0dygolsBbB+K2 azuread\archanap@IBM-8QY82F3"
+}</con:request>
+          <con:credentials>
+            <con:selectedAuthProfile>Profile 1</con:selectedAuthProfile>
+            <con:authType>OAuth 2.0</con:authType>
+          </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+          <con:jmsPropertyConfig/>
+          <con:parameters/>
+        </con:request>
+      </con:method>
+    </con:resource>
+  </con:interface>
+  <con:interface xsi:type="con:RestService" id="c0e5246c-77f8-4bc9-8535-79253196d3a8" wadlVersion="http://wadl.dev.java.net/2009/02" name="https://api.github.com" type="rest" lastUpdated="2026-02-08T20:09:29.283+05:30" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <con:settings/>
+    <con:definitionCache type="TEXT" rootPart=""/>
+    <con:endpoints>
+      <con:endpoint>https://api.github.com</con:endpoint>
+    </con:endpoints>
+    <con:resource name="KeyId" path="/user/keys/{keyId}" id="1aa625ad-27f3-419e-87e4-28b7a4bbb9ad">
+      <con:settings/>
+      <con:parameters>
+        <con:parameter>
+          <con:name>keyId</con:name>
+          <con:value>keyId</con:value>
+          <con:style>TEMPLATE</con:style>
+          <con:default>keyId</con:default>
+          <con:path xsi:nil="true"/>
+          <con:description xsi:nil="true"/>
+        </con:parameter>
+      </con:parameters>
+      <con:method name="KeyId 1" id="8e62737b-a86c-4fff-9eb6-429eb4b95044" method="GET">
+        <con:settings/>
+        <con:parameters/>
+        <con:request name="Request 1" id="513325a1-3820-47af-9758-1e3b0b9be40d" mediaType="application/json">
+          <con:settings>
+            <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+          </con:settings>
+          <con:endpoint>https://api.github.com</con:endpoint>
+          <con:request/>
+          <con:credentials>
+            <con:selectedAuthProfile>Profile 1</con:selectedAuthProfile>
+            <con:authType>OAuth 2.0</con:authType>
+          </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+          <con:jmsPropertyConfig/>
+          <con:parameters>
+            <entry key="keyId" value="keyId" xmlns="http://eviware.com/soapui/config"/>
+          </con:parameters>
+          <con:parameterOrder>
+            <con:entry>keyId</con:entry>
+          </con:parameterOrder>
+        </con:request>
+      </con:method>
+    </con:resource>
+  </con:interface>
+  <con:interface xsi:type="con:RestService" id="3146f91d-ed71-4848-8004-660ef81eb845" wadlVersion="http://wadl.dev.java.net/2009/02" name="https://api.github.com" type="rest" lastUpdated="2026-02-08T20:09:29.418+05:30" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <con:settings/>
+    <con:definitionCache/>
+    <con:endpoints>
+      <con:endpoint>https://api.github.com</con:endpoint>
+    </con:endpoints>
+    <con:resource name="KeyId" path="/user/keys/{keyId}" id="1f81a4b9-2ec0-48e5-819f-2ba67df011cf">
+      <con:settings/>
+      <con:parameters>
+        <con:parameter>
+          <con:name>keyId</con:name>
+          <con:value>keyId</con:value>
+          <con:style>TEMPLATE</con:style>
+          <con:default>keyId</con:default>
+          <con:path xsi:nil="true"/>
+          <con:description xsi:nil="true"/>
+        </con:parameter>
+      </con:parameters>
+      <con:method name="KeyId 1" id="18366f87-1d36-4749-8bda-749f63f3d274" method="GET">
+        <con:settings/>
+        <con:parameters/>
+        <con:request name="Request 1" id="c05991d4-8359-4e8f-82ee-612fe295cf32" mediaType="application/json">
+          <con:settings>
+            <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+          </con:settings>
+          <con:endpoint>https://api.github.com</con:endpoint>
+          <con:request/>
+          <con:credentials>
+            <con:selectedAuthProfile>Profile 1</con:selectedAuthProfile>
+            <con:authType>OAuth 2.0</con:authType>
+          </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+          <con:jmsPropertyConfig/>
+          <con:parameters>
+            <entry key="keyId" value="keyId" xmlns="http://eviware.com/soapui/config"/>
+          </con:parameters>
+          <con:parameterOrder>
+            <con:entry>keyId</con:entry>
+          </con:parameterOrder>
+        </con:request>
+      </con:method>
+    </con:resource>
+  </con:interface>
+  <con:properties/>
+  <con:wssContainer/>
+  <con:databaseConnectionContainer/>
+  <con:jmsConnectionContainer/>
+  <con:oAuth2ProfileContainer>
+    <con:oAuth2Profile>
+      <con:name>Profile 1</con:name>
+      <con:type>OAuth 2.0</con:type>
+      <con:accessToken>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</con:accessToken>
+      <con:accessTokenPosition>HEADER</con:accessTokenPosition>
+      <con:oAuth2Flow>AUTHORIZATION_CODE_GRANT</con:oAuth2Flow>
+      <con:refreshAccessTokenMethod>AUTOMATIC</con:refreshAccessTokenMethod>
+      <con:accessTokenStatus>ENTERED_MANUALLY</con:accessTokenStatus>
+      <con:accessTokenStartingStatus>ENTERED_MANUALLY</con:accessTokenStartingStatus>
+    </con:oAuth2Profile>
+  </con:oAuth2ProfileContainer>
+  <con:oAuth1ProfileContainer/>
+  <con:reporting>
+    <con:xmlTemplates/>
+    <con:parameters/>
+  </con:reporting>
+  <con:authRepository/>
+  <con:tags/>
+</con:soapui-project>
